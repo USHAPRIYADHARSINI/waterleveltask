@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watertank Water unit calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <script src="script.js"></script> -->
+    <script src="script3.js"></script>
+<!-- <script>
+
+    var dataset = [0,4,0,0,0,6,0,6,4,0];
+
+    var svgWidth = 500, svgHeight = 300, barPadding = 5;
+    var barWidth = (svgWidth / dataset.length);
+
+    var svg = d3.select('body')
+        .append('svg')
+        .attr('width', svgWidth)
+        .attr('height', svgHeight);
+
+    var yScale = d3.scaleLinear()
+        .domain([d3.min(dataset), d3.max(dataset)])
+        .range([svgHeight, 0]);
+
+    var yAxis = d3.axisLeft(yScale);
+
+    svg.append('g')
+        .attr('transform', 'translate(50, 0)')
+        .call(yAxis);
+
+    var barChart = svg.selectAll('rect')
+        .data(dataset)
+        .enter()
+        .append('rect')
+        .attr('class', 'bar')
+        .attr('width', barWidth - barPadding)
+        .attr('height', function(d) {
+            return Math.abs(yScale(d) - yScale(0)); 
+        })
+        .attr('x', function (d, i) {
+            var barX = i * (barWidth - barPadding);
+            return barX + 50;
+        })
+        .attr('y', function(d) {
+            return yScale(Math.max(0, d)); 
+        });
+</script> -->
+</body>
+</html>
